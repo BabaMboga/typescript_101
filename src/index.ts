@@ -13,3 +13,19 @@ let level;
 level = 1;
 level = 'a';
 // avoid using the any type 
+
+let numbers: number[] = [];
+//proper initialisation of an array
+
+let user: [number, string] = [1, 'Mosh'];
+// proper initialisation of a tuple
+
+//showcasing proper use of enum type
+
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+enum Size {Small =1 , Medium, Large};
+let mySize: Size = Size.Medium
+console.log(mySize)

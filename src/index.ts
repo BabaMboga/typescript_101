@@ -39,3 +39,15 @@ function calculateTax (income: number, taxYear=2022): number {
 
 calculateTax(10_000, 2023)
 calculateTax(11_000)
+
+// working with objects
+let employee:{
+    readonly id:number, // parameter cannot be reassigned
+    name: string,
+    maritalStatus?: boolean, // it is a required parameter and thus not providing doesn't bring an error
+    retire: (date: Date) => void
+} = {
+    id: 1,
+    name: 'Mosh',
+    retire: (date:Date) => {console.log(date)}
+};

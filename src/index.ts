@@ -85,3 +85,8 @@ let textBox: UIWidget = {
     drag: () => {},
     resize: () => {}
 }
+
+//Litereal types are specific and exact
+
+type Quantity = 50 | 100;
+let quantity: Quantity = 100;

@@ -55,3 +55,15 @@ let employee: Employee = {
 };
 
 // the type alias added above ensure we can use the Employee everywhere
+
+//below is the use of a union type
+function kgToLbs(weight: number | string): number {
+    // Narrowing
+    if (typeof weight ==='number')
+        return weight * 2.2;
+    else 
+        return parseInt(weight) * 2.2
+}
+
+kgToLbs(10);
+kgToLbs('10kg');

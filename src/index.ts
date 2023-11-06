@@ -90,3 +90,13 @@ let textBox: UIWidget = {
 
 type Quantity = 50 | 100;
 let quantity: Quantity = 100;
+
+// nullable types
+function greet(name : string | null | undefined) {
+    if(name)
+        console.log(name.toUpperCase());
+    else
+        console.log('Hola!');
+}
+
+greet(undefined); // we are only able to use undefined or null because of the union operator in our parameters

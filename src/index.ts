@@ -40,14 +40,18 @@ function calculateTax (income: number, taxYear=2022): number {
 calculateTax(10_000, 2023)
 calculateTax(11_000)
 
-// working with objects
-let employee:{
+// working with objects and advanced types
+type Employee = {
     readonly id:number, // parameter cannot be reassigned
     name: string,
     maritalStatus?: boolean, // it is a required parameter and thus not providing doesn't bring an error
     retire: (date: Date) => void
-} = {
+
+}
+let employee: Employee = {
     id: 1,
     name: 'Mosh',
     retire: (date:Date) => {console.log(date)}
 };
+
+// the type alias added above ensure we can use the Employee everywhere
